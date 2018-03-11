@@ -1,0 +1,49 @@
+<html>
+<head>
+<title>Tip Calculator</title>    
+    
+<link rel="stylesheet" type="text/css" href="styles.css">        
+</head>
+<body style="background:url('images/cutlery.jpg')">
+    <div id="container">
+    <h1>Tip Calculator</h1>
+    
+    <div id="calculator">
+        
+        
+        <form>
+        <label>
+            How much was your bill ?<br>
+            $<input type="text" id="billamount">
+            </label>
+        <label>
+            how was your servise ?<br>
+            <select id="servicequality">
+            <option value="0" disabled selected>--choose an option--</option>
+            <option value=".3">--30% outstanding</option>
+            <option value=".2">--20% it was good</option>
+            <option value=".1">--10% it was bad</option>
+            <option value=".05">--5% really bad</option>
+            </select>
+            
+            </label>
+        <label> how many people are sharing the bill ?<br>
+            <input type="text" id="totalpeople">people
+            </label>
+        <button type="button" id="calculate">Calculate !</button>
+        </form>
+        
+        </div><!--calculator-->
+    <div id="totaltip">
+        <sup>$</sup>
+        <span id="tip">0.00</span>
+        <small id="each">each</small>
+        
+        </div><!--totaltip-->
+        
+    </div><!--container-->
+    
+    <script type="text/javascript" src="script.js"></script>
+    
+    </body>
+</html>
